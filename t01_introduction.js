@@ -2,7 +2,7 @@
 introduction
 ****************************/
 console.log("Running t01_introduction.js")
-console.log("introduction_01.js")
+console.log("Dino world is running")
 
 // Variable
 
