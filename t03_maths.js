@@ -5,7 +5,7 @@ Maths.js
 console.log("Running t03_maths.js")
 
 
-let name = " QuocBao"
+let name = " QuocBao";
 let Year = 2026;
 let money = 10;
 let Yearold = 16;
