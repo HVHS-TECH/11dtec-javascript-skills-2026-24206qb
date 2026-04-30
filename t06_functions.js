@@ -40,4 +40,4 @@ OUTPUT.innerHTML += "<p> Then you get $3, now you have " + money + "</p>";
 
 /****************************
 Footer
-****************************//* Paste your code from task 5 here */
+****************************/
