@@ -1,7 +1,7 @@
 /****************************
-Function_parameters.js
+Activate_via_button.js
 ****************************/
-console.log("Running t07_Function_parameters.js")
+console.log("Running t09_activate_via_button.js")
 
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
