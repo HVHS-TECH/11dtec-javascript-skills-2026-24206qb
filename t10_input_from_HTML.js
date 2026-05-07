@@ -5,18 +5,11 @@ console.log("Running t10_input_from_HTML.js")
 
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-function getFormInput() {
-  const Name_Field = document.getElementById('nameField');
-  let username = Name_Field.value; 
-  OUTPUT.innerHTML += "<p>Your name is " + username + "</p>";
-}
-
 let name = " QuocBao"
 let Year = 2026;
 let money = 10;
 let Yearold = 16;
 // Variable
-
 
 
 function Welcome(){
@@ -32,6 +25,11 @@ OUTPUT.innerHTML += "<p>"+ _name  + _price + "</p>";
 Dino World header
 ****************************/
 
+function getFormInput() {
+  const Name_Field = document.getElementById('nameField');
+  let username = Name_Field.value; 
+  OUTPUT.innerHTML += "<p>Your name is " + username + "</p>";
+}
 
 OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
 
