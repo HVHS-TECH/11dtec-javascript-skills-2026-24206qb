@@ -19,19 +19,49 @@
   <h1>T11-data types</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
 
+  <h2>Please type your name</h2>
+
+
   <form onsubmit="return false;">
   <label for="formName">Name:</label>
-  <input type="text" id="nameField" value="Name">
+  <input type="text" id="nameField" placeholder="Enter text">
   <input type="submit" onclick="getFormInput()">
    </form>
 
+  <form onsubmit="return false;">
+  <label for="formAges">Your Ages:</label>
+  <input type="text" id="AgesField" placeholder="Enter text">
+  <input type="submit" onclick="getInputAges()">
+   </form>
+
+
+  <form onsubmit="return false;">
+  <label for="formmoney">Pocket money:</label>
+  <input type="text" id="moneyField" placeholder="Enter text">
+  <input type="submit" onclick="getInputmoney()">
+   </form>
+
   <script>
+
   function getFormInput() {
   const Name_Field = document.getElementById("nameField");
   let username = Name_Field.value;   
   showOutput(username);
 }
+
+  function getInputAges() {
+  const Ages_Field = document.getElementById("AgesField");
+  let userAges = "Ages_Field.value";   
+  showOutput(userAges);
+}
+
+  function getInputmoney() {
+  const money_Field = document.getElementById("moneyField");
+  let usermoney = "money_Field.value";   
+  showOutput(usermoney);
+}
   </script>
+
 
   <div id="spaceForJavaScriptOutput"></div>
 
