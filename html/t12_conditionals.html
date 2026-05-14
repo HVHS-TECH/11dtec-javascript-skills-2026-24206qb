@@ -19,15 +19,22 @@
   <h1>T12-conditionals</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
 
-  <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
+  <form onsubmit="return false;">
 
-  <div id="spaceForJavaScriptOutput">
+    <label for="nameField">Name:</label>
+    <input type="text" id="nameField" placeholder="Enter name"><br>
 
-    The output of your script will go here.
+    <label for="AgesField">Your Age:</label>
+    <input type="text" id="AgesField" placeholder="Enter age"><br>
+    
+    <label for="moneyField">Pocket money:</label>
+    <input type="text" id="moneyField" placeholder="Enter money"><br>
 
-  </div>
+    <input type="submit" value="Submit" onclick="getFormInput()">
 
+  </form>
 
+  <div id="spaceForJavaScriptOutput"></div>
   <script src="../t12_conditionals.js"></script>
 
 </body>

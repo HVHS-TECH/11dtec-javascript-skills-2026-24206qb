@@ -18,16 +18,23 @@
 <body>
   <h1>T13-functions with return values</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
+  
+  <form onsubmit="return false;">
 
-  <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
+    <label for="nameField">Name:</label>
+    <input type="text" id="nameField" placeholder="Enter name"><br>
 
-  <div id="spaceForJavaScriptOutput">
+    <label for="AgesField">Your Age:</label>
+    <input type="text" id="AgesField" placeholder="Enter age"><br>
+    
+    <label for="moneyField">Pocket money:</label>
+    <input type="text" id="moneyField" placeholder="Enter money"><br>
 
-    The output of your script will go here.
+    <input type="submit" value="Submit" onclick="getFormInput()">
 
-  </div>
+  </form>
 
-
+  <div id="spaceForJavaScriptOutput"></div>
   <script src="../t13_functions_return.js"></script>
 
 </body>

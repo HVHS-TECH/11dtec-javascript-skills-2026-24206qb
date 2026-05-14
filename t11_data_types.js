@@ -50,15 +50,20 @@ function showOutput(username, userAges, usermoney) {
   OUTPUT.innerHTML += "<p> You have " + usermoney + " dollars</p>";
 
   Welcome();
-
+  
   displayProduct("Waters bottles: ", "$1.50");
-  displayProduct("nokia 3310: ", "$65");
-  displayProduct("65-inch 4K TVs: ", "$1050");
-  displayProduct("Laptop: ", "$2000");
-  displayProduct("Dune 85' Benetti 1974: ", "$500,000");
-  displayProduct("lamborghini aventador: ", "$1,000,000");
-  displayProduct("Lands: ", "$3,000,000");
 
+  displayProduct("nokia 3310: ", "$65");
+
+  displayProduct("65-inch 4K TVs: ", "$1050");
+  
+  displayProduct("Laptop: ", "$2000");
+
+  displayProduct("Dune 85' Benetti 1974: ", "$500,000");
+
+  displayProduct("lamborghini aventador: ", "$1,000,000");
+
+  displayProduct("Lands: ", "$3,000,000");
 
   usermoney = usermoney / 2;
   OUTPUT.innerHTML += "<p> You spend half of your money on the Shop, now you have " + usermoney + "</p>";
