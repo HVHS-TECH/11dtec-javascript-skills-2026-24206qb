@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>T14-arrays 1</title>
+  <title>T14_arrays_1</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,23 +16,33 @@
 **************************************************************-->
 
 <body>
-  <h1>T14-arrays part 1</h1>
+  <h1>t14_arrays_1</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
+  
+  <form onsubmit="return false;">
 
-  <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
+    <label for="nameField">Name:</label>
+    <input type="text" id="nameField" placeholder="Enter name"><br>
 
-  <div id="spaceForJavaScriptOutput">
+    <label for="AgesField">Your Age:</label>
+    <input type="text" id="AgesField" placeholder="Enter age"><br>
+    
+    <label for="moneyField">Pocket money:</label>
+    <input type="text" id="moneyField" placeholder="Enter money"><br>
 
-    The output of your script will go here.
+    <label for="WatersField">On a scale of 0-3 how much do you like Waters Bottles :</label>
+    <input type="text" id="WatersField" placeholder="Enter Rating"><br>
 
-  </div>
+    <input type="submit" value="Submit" onclick="getFormInput()">
 
-
+  </form>
+  
+  <div id="spaceForJavaScriptOutput"></div>
   <script src="../t14_arrays_1.js"></script>
 
 </body>
 
 </html>
 <!--*************************************************************
-  END OF T14_ARRAYS_1.HTML
+  END OF t14_arrys_1.html
 **************************************************************-->
