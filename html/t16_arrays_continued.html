@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>T16-arrays continued</title>
+  <title>T16_arrys_continued</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,23 +16,33 @@
 **************************************************************-->
 
 <body>
-  <h1>T16-arrays continued</h1>
+  <h1>t16_arrys_continued</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
+  
+  <form onsubmit="return false;">
 
-  <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
+    <label for="nameField">Name:</label>
+    <input type="text" id="nameField" placeholder="Enter name"><br>
 
-  <div id="spaceForJavaScriptOutput">
+    <label for="AgesField">Your Age:</label>
+    <input type="text" id="AgesField" placeholder="Enter age"><br>
+    
+    <label for="moneyField">Pocket money:</label>
+    <input type="text" id="moneyField" placeholder="Enter money"><br>
 
-    The output of your script will go here.
+    <label for="WatersField">On a scale of 0-3 how much do you like Waters Bottles :</label>
+    <input type="text" id="WatersField" placeholder="Enter Rating"><br>
 
-  </div>
+    <input type="submit" value="Submit" onclick="getFormInput()">
 
-
-  <script src="../t16_arrays_continued.js"></script>
+  </form>
+  
+  <div id="spaceForJavaScriptOutput"></div>
+  <script src="../t16_arrys_continued.js"></script>
 
 </body>
 
 </html>
 <!--*************************************************************
-  END OF T16_ARRAYS_CONTINUED.HTML
+  END OF t14_arrys_1.html
 **************************************************************-->
