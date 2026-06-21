@@ -4,6 +4,36 @@ t16_arrys_continued.js
 console.log("Running t16_arrys_continued.js")
 
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+const SHOPPING_OUTPUT = document.getElementById("shoppingListOutput");
+const SHOPPING_LIST = [];
+
+function addShoppingItem() {
+  const shoppingInput = document.getElementById("shoppingItemField");
+  const item = shoppingInput.value.trim();
+
+  if (item === "") {
+    SHOPPING_OUTPUT.innerHTML = "<p>Please enter an item before adding it to the list.</p>";
+    return;
+  }
+
+  SHOPPING_LIST.push(item);
+  SHOPPING_OUTPUT.innerHTML = `<p>You have added ${item} to the list</p>`;
+  shoppingInput.value = "";
+}
+
+function showShoppingList() {
+  if (SHOPPING_LIST.length === 0) {
+    SHOPPING_OUTPUT.innerHTML = "<p>Your shopping list is empty.</p>";
+    return;
+  }
+
+  let message = "<p>These are the items on your shopping list:</p>";
+  SHOPPING_LIST.forEach((item) => {
+    message += `<p>${item}</p>`;
+  });
+
+  SHOPPING_OUTPUT.innerHTML = message;
+}
 
 function getFormInput() {
 
@@ -59,7 +89,6 @@ let  Waters_bottles_rating = ["You loath Waters bottles", " Waters bottles is me
     function calculateChange(usermoney, price) {
     return usermoney - price ;
   }
-
 
   displayProduct("Waters bottles: ", "$1.50");
 
