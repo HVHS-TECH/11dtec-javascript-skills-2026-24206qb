@@ -15,7 +15,7 @@ function addShoppingItem() {
     if (item < "-1") { //if item is lesser than -1//
         output.innerHTML = "Please type an item first!";
     } else {
-        list.push(item); //add the item to the array I think//
+        list.push(item); //add the item to the array//
         output.innerHTML = item + " was added to the shopping list!";
     }
 }
