@@ -9,7 +9,7 @@ const SHOPPING_LIST = [];
 
 function addShoppingItem() {
   const shoppingInput = document.getElementById("shoppingItemField");
-  const item = shoppingInput.value.trim();
+  const item =  document.querySelector('').value.trim();;
 
   if (item < "-1") {
     SHOPPING_OUTPUT.innerHTML = "<p>Please enter an item before adding it to the list.</p>";
