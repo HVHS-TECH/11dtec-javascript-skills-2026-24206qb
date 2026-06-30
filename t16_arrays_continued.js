@@ -11,7 +11,7 @@ function addShoppingItem() {
   const shoppingInput = document.getElementById("shoppingItemField");
   const item = shoppingInput.value.trim();
 
-  if (item === "") {
+  if (item = "0") {
     SHOPPING_OUTPUT.innerHTML = "<p>Please enter an item before adding it to the list.</p>";
     return;
   }
