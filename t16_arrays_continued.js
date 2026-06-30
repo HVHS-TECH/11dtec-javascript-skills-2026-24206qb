@@ -6,18 +6,18 @@ console.log("Running t16_arrys_continued.js")
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 let output = document.getElementById("shoppingListOutput");
-let list = [];
+let list = []; //array//
 
 function addShoppingItem() {
     let input = document.getElementById("shoppingItemField");
     let item = input.value;
 
-    if (item < "-1") {
+    if (item < "-1") { //if item is lesser than -1//
         output.innerHTML = "Please type an item first!";
     } else {
-        list.push(item);
+        list.push(item); //add the item to the array I think//
         output.innerHTML = item + " was added to the shopping list!";
-        input.value = "";
+        input.value = ""; ////
     }
 }
 
