@@ -30,6 +30,7 @@ Dino World header
 function showOutput(username, userAges, usermoney,WatersRating) {
 
 let  Waters_bottles_rating = ["You loath Waters bottles", " Waters bottles is meh", " Waters bottles is pretty good" , " Waters bottles is the best thing EVER!!!!"];
+
    let Year = 2026;
 
 
