@@ -17,18 +17,17 @@ function addShoppingItem() {
     } else {
         list.push(item); //add the item to the array I think//
         output.innerHTML = item + " was added to the shopping list!";
-        input.value = ""; ////
     }
 }
 
 function showShoppingList() {
 
-    if (list.length == 0) {
+    if (list.length == 0) {//array have no product//
         output.innerHTML = "Your shopping list is empty!";
     } else {
         let text = "Shopping List:<br>";
 
-        for (let i = 0; i < list.length; i++) {
+        for (let i = 0; i < list.length; i++) { //i start at 0 until equan to the number of product, and i plus one every time//
             text = text + list[i] + "<br>";
         }
 
