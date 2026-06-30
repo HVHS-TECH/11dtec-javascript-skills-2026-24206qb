@@ -4,35 +4,36 @@ t16_arrys_continued.js
 console.log("Running t16_arrys_continued.js")
 
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-const SHOPPING_OUTPUT = document.getElementById("shoppingListOutput");
-const SHOPPING_LIST = [];
+
+let output = document.getElementById("shoppingListOutput");
+let list = [];
 
 function addShoppingItem() {
-  const shoppingInput = document.getElementById("shoppingItemField");
-  const item = shoppingInput.value.trim();
+    let input = document.getElementById("shoppingItemField");
+    let item = input.value;
 
-  if (item < "-1") {
-    SHOPPING_OUTPUT.innerHTML = "<p>Please enter an item before adding it to the list.</p>";
-    return;
-  }
-
-  SHOPPING_LIST.push(item);
-  SHOPPING_OUTPUT.innerHTML = `<p>You have added ${item} to the list</p>`;
-  shoppingInput.value = "";
+    if (item == "") {
+        output.innerHTML = "Please type an item first!";
+    } else {
+        list.push(item);
+        output.innerHTML = item + " was added to the shopping list!";
+        input.value = "";
+    }
 }
 
 function showShoppingList() {
-  if (SHOPPING_LIST.length === 0) {
-    SHOPPING_OUTPUT.innerHTML = "<p>Your shopping list is empty.</p>";
-    return;
-  }
 
-  let message = "<p>These are the items on your shopping list:</p>";
-  SHOPPING_LIST.forEach((item) => {
-    message += `<p>${item}</p>`;
-  });
+    if (list.length == 0) {
+        output.innerHTML = "Your shopping list is empty!";
+    } else {
+        let text = "Shopping List:<br>";
 
-  SHOPPING_OUTPUT.innerHTML = message;
+        for (let i = 0; i < list.length; i++) {
+            text = text + list[i] + "<br>";
+        }
+
+        output.innerHTML = text;
+    }
 }
 
 function getFormInput() {
