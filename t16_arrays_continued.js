@@ -12,7 +12,7 @@ function addShoppingItem() {
     let input = document.getElementById("shoppingItemField");
     let item = input.value;
 
-    if (item == "") {
+    if (item < "-1") {
         output.innerHTML = "Please type an item first!";
     } else {
         list.push(item);
