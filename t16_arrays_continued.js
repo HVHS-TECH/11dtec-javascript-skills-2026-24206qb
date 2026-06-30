@@ -5,7 +5,7 @@ console.log("Running t16_arrys_continued.js")
 
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-let output = document.getElementById("shoppingListOutput");
+const output = document.getElementById("shoppingListOutput");
 let list = []; //array//
 
 function addShoppingItem() {
